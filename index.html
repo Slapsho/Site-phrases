@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA RP - Phrases Rapides</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🎮 GTA RP phrases</h1>
+            <p>Cliquez sur une phrase pour la copier automatiquement</p>
+        </header>
+
+        <div class="search-section">
+            <p class="description">Vous pouvez chercher , créer et copier une phrase présente sur la page.</p>
+            <input type="text" id="searchInput" placeholder="🔍 Rechercher une phrase..." class="search-input">
+        </div>
+
+        <div class="categories">
+            <button class="category-btn active" data-category="all">Toutes</button>
+            <button class="category-btn" data-category="police">Police</button>
+            <button class="category-btn" data-category="Rapports">Rapports</button>
+            <button class="category-btn" data-category="urgence">Urgence</button>
+            <button class="category-btn" data-category="roleplay">Roleplay</button>
+        </div>
+
+        <div class="phrases-grid" id="phrasesGrid">
+         
+        </div>
+
+        <div class="add-phrase-section">
+            <h3>Ajouter une nouvelle phrase</h3>
+            <div class="add-form">
+                <input type="text" id="newPhrase" placeholder="Tapez votre phrase...">
+                <select id="newCategory">
+                    <option value="police">Police</option>
+                    <option value="urgence">Urgence</option>
+                    <option value="roleplay">Roleplay</option>
+                    <option value="Rapports">Rapports</option>
+                </select>
+                <button id="addPhraseBtn">Ajouter</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="notification" class="notification">
+        Phrase copiée ! 📋
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
